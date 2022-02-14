@@ -21,9 +21,7 @@ In order to have quick access to websites I use frequently
 I would like to access a list of website bookmarks
 ```
 
-```
+
 Domain Model:
 
 ![](images/bookmark_manager_domain_model.png)
-
-```

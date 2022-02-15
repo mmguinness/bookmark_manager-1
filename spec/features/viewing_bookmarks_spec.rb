@@ -8,4 +8,11 @@ feature 'Shows bookmarks' do
       expect(page).to have_content "www.youtube.com"
   end
 end
+
+# As a time-pressed user
+# So that I can save a website
+# I would like to add the site's address and title to bookmark manager
+
+feature 'add new bookmarks' do
+  
       

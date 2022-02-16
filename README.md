@@ -20,6 +20,11 @@ As an internet user
 In order to have quick access to websites I use frequently
 I would like to access a list of website bookmarks
 ```
+```
+As an internet user
+In order to save a favourite website 
+I would like to add a bookmark
+```
 
 
 Domain Model:

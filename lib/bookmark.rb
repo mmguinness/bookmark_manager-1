@@ -11,4 +11,8 @@ class Bookmark
     result = connection.exec("SELECT * FROM bookmarks;")
     result.map { |bookmark| bookmark['url'] }
     end
+
+    def add_bookmark(bookmark)
+      connection.exec("INSERT INTO bookmarks VALUES(9, 'http://www.google.com/');")
+    end
   end

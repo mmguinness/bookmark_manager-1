@@ -20,13 +20,10 @@ end
 
 feature 'Adding a Bookmark' do
   scenario 'submitting a bookmark via a form' do
-    visit('/bookmarks')
-    connection = PG.connect(dbname: 'bookmark_manager_test')
+    visit('/bookmarks/new')
+    # connection = PG.connect(dbname: 'bookmark_manager_test')
     fill_in('url', :with => 'http://waterstones.com') 
-    expect(page).to have_field('url', :with => 'http://waterstones.com')
     click_button "Add bookmark"
-    
+    expect(page).to have_content 'http://waterstones.com'
   end
 end
-
-      
